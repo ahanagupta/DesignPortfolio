@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Ahana Gupta – Data Science Portfolio</title>
+<meta name="description" content="Portfolio of Ahana Gupta, M.Sc. Data Science student at CHRIST (Deemed to be University), Bengaluru.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Source+Serif+4:opsz,wght@8..60,400..600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5fb;--ink:#121a4a;--muted:#4e5883;--rule:#cdd5ea;--grid:rgba(27,42,120,.07);--brand:#1b2a78;--accent:#f2b632;
+--head:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--body:"Source Serif 4",Georgia,"Times New Roman",serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1131;--ink:#e8ebff;--muted:#a3abd9;--rule:#262e66;--grid:rgba(163,171,217,.09);--brand:#b4beff;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0c1131;--ink:#e8ebff;--muted:#a3abd9;--rule:#262e66;--grid:rgba(163,171,217,.09);--brand:#b4beff;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:var(--brand);text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:4px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--rule)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{font:700 18px var(--head);color:var(--ink);text-decoration:none}
+nav{display:flex;gap:22px;font:500 15px var(--head)}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--brand);text-decoration:underline;text-decoration-color:var(--accent)}
+.hero{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px;border-bottom:1px solid var(--rule)}
+.hero .wrap{padding-top:56px;padding-bottom:56px}
+h1{font:800 clamp(68px,17vw,176px)/.9 var(--head);letter-spacing:-.035em;color:var(--brand);margin:0}
+.lede{font-size:clamp(20px,2.5vw,25px);line-height:1.5;max-width:29em;margin:32px 0 10px}
+.note{color:var(--muted);max-width:36em;margin:0}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin-top:30px;font:600 16px var(--head)}
+.btn{background:var(--accent);color:#121a4a;padding:12px 22px;border-radius:10px;text-decoration:none}
+.btn:hover{filter:brightness(1.06)}
+section{padding:60px 0 8px}
+h2{font:700 clamp(30px,4.5vw,42px)/1.1 var(--head);letter-spacing:-.02em;margin:0 0 26px}
+.row{display:grid;grid-template-columns:240px 1fr;gap:6px 36px;padding:28px 0;border-top:1px solid var(--rule)}
+h3{font:700 20px/1.25 var(--head);margin:0}
+.meta{color:var(--muted);font-size:15px;margin:6px 0 0}
+.meta span{display:block}
+.row p{margin:0 0 12px;max-width:62ch}
+.row p:last-child{margin-bottom:0}
+.stack{color:var(--muted);font-size:15px}
+.lead h3{font-size:28px}
+.lead .row-body p:first-child{font-size:19px}
+#contact{padding-bottom:64px}
+#contact p{max-width:34em}
+.links{display:flex;flex-wrap:wrap;gap:12px 28px;font:600 20px var(--head)}
+footer{border-top:1px solid var(--rule);padding:22px 0 30px;color:var(--muted);font-size:15px}
+@media (max-width:720px){
+.row{grid-template-columns:1fr;gap:10px}
+nav a.opt{display:none}
+.hero .wrap{padding-top:40px;padding-bottom:44px}
+}
+</style>
+</head>
+<body id="top">
+<header>
+<div class="wrap">
+<a class="brand" href="#top">Ahana Gupta</a>
+<nav>
+<a href="#projects">Projects</a>
+<a class="opt" href="#skills">Skills</a>
+<a class="opt" href="#leadership">Design and leadership</a>
+<a class="opt" href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+<div class="hero">
+<div class="wrap">
+<h1>Ahana<br>Gupta</h1>
+<p class="lede">I’m a mathematics graduate studying M.Sc. Data Science at CHRIST University, building explainable machine learning and computer vision pipelines.</p>
+<p class="note">Graduating June 2027. Looking for Data Science and GenAI internships and graduate roles in Bengaluru or remote.</p>
+<div class="actions">
+<a class="btn" href="#projects">See projects</a>
+<a href="mailto:ahana.gupta@msds.christuniversity.in">Email me</a>
+<a href="https://www.linkedin.com/in/ahanagupta2003" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</div>
+</div>
+
+<div class="wrap">
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="row lead">
+<div>
+<h3>Posture-based stress estimation</h3>
+<p class="meta"><span>Research paper, in progress</span><span>Jan 2026 – ongoing</span></p>
+</div>
+<div class="row-body">
+<p>An explainable pipeline built on 13,143 cleaned MPII Human Pose samples. ViTPose extracts 17 body keypoints from raw images, five geometric posture features feed an evidence-weighted composite stress score, and an XGBoost regressor reaches R² 0.52 and AUC 0.97 on a held-out test set.</p>
+<p>Five-fold cross-validation gives a mean R² of 0.54 ± 0.02. A single-feature ablation shows the five-feature fusion beats every single-angle model, and SHAP identifies head tilt as the strongest predictor.</p>
+<p class="stack">Python, XGBoost, SHAP, ViTPose, Hugging Face</p>
+</div>
+</div>
+
+<div class="row">
+<div>
+<h3>Vehicle counting and tracking from traffic video</h3>
+<p class="meta"><span>Aug – Sep 2026</span></p>
+</div>
+<div>
+<p>An image processing pipeline for 1080p traffic video (75 sampled frames): median-background segmentation, Otsu thresholding, morphological filtering and a distance-transform watershed to split merged vehicles.</p>
+<p>Geometric features (area, centroid, perimeter, eccentricity, solidity) feed a minimum-distance classifier that sorts 1,580 detections into small, medium and large, with no labelled training data. Tracking produced 247 vehicle tracks, 78.5% of them lasting beyond one frame. Counting accuracy reached 85.4% (MAE 3.5 vehicles per frame) against manual counts on 4 sampled frames.</p>
+<p class="stack">Python, OpenCV, scikit-image, NumPy, Pandas, SciPy, Matplotlib</p>
+</div>
+</div>
+
+<div class="row">
+<div>
+<h3>CampusConnect</h3>
+<p class="meta"><span>Student collaboration platform</span><span>Jun – Sep 2026</span></p>
+</div>
+<div>
+<p>A full-stack platform with 10 connected modules: marketplace, lost and found, tutoring, campus hub, chat and notifications. It runs on a 14-table PostgreSQL schema with foreign-key integrity.</p>
+<p>I designed the Hono REST API with Supabase bearer-token authentication, managed state with 8 Zustand stores, and built automated notification triggers across chat, tutoring bookings and campus comments.</p>
+<p class="stack">React, TypeScript, Hono, Bun, Supabase (PostgreSQL), Zustand</p>
+</div>
+</div>
+
+<div class="row">
+<div>
+<h3>Crime Investigation Bureau management system</h3>
+<p class="meta"><span>Oct – Dec 2025</span></p>
+</div>
+<div>
+<p>A case-management application for FIRs, cases, evidence and court hearings, on a relational database of 40+ interconnected tables. It has session-based authentication, role-based data access and REST APIs for FIR registration, case tracking and hearing scheduling.</p>
+<p class="stack">Python, Django, MySQL, HTML, CSS, JavaScript</p>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="row"><h3>Programming and data</h3><p>Python, SQL (MySQL, PostgreSQL), R, Pandas, NumPy, SciPy, Git, Linux (basic)</p></div>
+<div class="row"><h3>Machine learning</h3><p>Machine learning, deep learning, XGBoost, SHAP, Hugging Face Transformers, image and video analytics, time series forecasting</p></div>
+<div class="row"><h3>Statistics and mathematics</h3><p>Probability and statistics, regression modelling, econometrics, inferential statistics</p></div>
+<div class="row"><h3>Reporting</h3><p>Power BI, Tableau, MS Excel (advanced)</p></div>
+<div class="row"><h3>Web development</h3><p>Django, React, TypeScript</p></div>
+<div class="row"><h3>Domains</h3><p>Financial modelling, market research, equity research, digital marketing, consumer behaviour</p></div>
+</section>
+
+<section id="leadership">
+<h2>Design and leadership</h2>
+<div class="row">
+<div><h3>Creative designer, Magazine Committee</h3><p class="meta"><span>Expectation 2026, departmental fest</span><span>Jul – Sep 2026</span></p></div>
+<div><p>Designed the layout and visual identity of the departmental fest magazine: 108 pages of content.</p></div>
+</div>
+<div class="row">
+<div><h3>Emcee and graphic designer</h3><p class="meta"><span>Freshers’ Day and Seniors’ Farewell</span><span>Jun – Sep 2026</span></p></div>
+<div><p>Hosted the freshers’ welcome for an audience of 65 and managed the programme flow. Designed the posters, badges and certificates for the seniors’ farewell: 54 items.</p></div>
+</div>
+<div class="row">
+<div><h3>Co-head, Documentation Committee</h3><p class="meta"><span>Expectation 2025, departmental fest</span><span>Jul – Nov 2025</span></p></div>
+<div><p>Co-led a 13-member committee that documented 18 fest events.</p></div>
+</div>
+<div class="row">
+<div><h3>Python tutor</h3><p class="meta"><span>UG Biotechnology and Chemistry, CHRIST University</span><span>Jun – Sep 2026</span></p></div>
+<div><p>Taught Python fundamentals to 74 students over 30 sessions, with examples that suited non-CS learners.</p></div>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="row">
+<div><h3>M.Sc. Data Science</h3><p class="meta"><span>CHRIST (Deemed to be University), Bengaluru</span><span>Jun 2025 – Jun 2027 (expected)</span></p></div>
+<div><p>72.46%</p></div>
+</div>
+<div class="row">
+<div><h3>B.Sc. (Honours) Mathematics</h3><p class="meta"><span>Lady Brabourne College, Kolkata</span><span>University of Calcutta, 2021 – 2025</span></p></div>
+<div><p>70.19%</p></div>
+</div>
+<div class="row">
+<div><h3>ICSE, Classes X and XII</h3><p class="meta"><span>St. Joseph’s Convent School, Kolkata</span></p></div>
+<div><p>Class XII 93.50%, Class X 91.60%. First place in Computer Applications, ICSE, 2019.</p></div>
+</div>
+<div class="row">
+<div><h3>Languages</h3></div>
+<div><p>English (proficient, C1), Bengali (fluent), Hindi (fluent), Korean (conversational)</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>I’m open to Data Science and GenAI internships and graduate roles, in Bengaluru or remote.</p>
+<div class="links">
+<a href="mailto:ahana.gupta@msds.christuniversity.in">ahana.gupta@msds.christuniversity.in</a>
+<a href="https://www.linkedin.com/in/ahanagupta2003" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</section>
+</div>
+</main>
+
+<footer>
+<div class="wrap">Ahana Gupta, Bengaluru, Karnataka</div>
+</footer>
+</body>
+</html>
